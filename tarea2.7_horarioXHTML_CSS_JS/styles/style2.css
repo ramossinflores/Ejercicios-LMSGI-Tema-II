@@ -1,0 +1,84 @@
+  @font-face {
+    font-family: MontserratBold;
+    src: url(fonts/Montserrat-Bold.ttf);
+  }
+  body{
+    background-color: black;
+    color: white;
+  }
+    table td{
+      font-size: 1em;
+      font-weight: bold;
+    }
+    table td:hover {
+      transform: scale(1.05);
+    }
+/*Estilos de las celdas: borde y padding*/    
+    td, th {
+      border: 2px solid white;
+      padding:12px;
+    }  
+    caption {
+        font-family: MontserratBold,serif;
+        letter-spacing: 6px;
+        }
+    tfoot {
+      display: none;
+    }
+  abbr {
+    cursor: help;
+    text-decoration: none;
+    font-variant: none;
+        }
+/*Estilos de celdas según el módulo y recreo*/
+  .par{
+    background-color: #77dd77;
+  }
+  .gbd{
+    background-color: #ff6961;
+  }
+  .iso{
+    background-color: #b8e4ff;
+  }
+  .fh{
+    background-color: #fdfd96;
+  }
+  .fol{
+    background-color: #fdcae1;
+  }
+  .lmsgi{
+    background-color: #e79eff;
+  }
+  .recreo{
+    background-color: #97cda6;
+    letter-spacing: 8px;
+  }
+  /*Desactivo el hover para el recreo*/
+  .recreo:hover{
+    transform: none;
+  }
+  p{
+    text-align: center;
+    margin-bottom: 32px;
+  }      
+  ul{
+    list-style: none;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    margin-bottom: 32px;
+  }
+  ul>li>a{
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 1.2em;
+    color: #8e43e7;
+    border: solid 3px #8e43e7;
+    border-radius: 8px;
+    padding: 12px;
+  }
+  ul>li>a:hover{
+    border-color:#c1d82f;
+    color: #c1d82f;
+    transition: all .7s;
+  }

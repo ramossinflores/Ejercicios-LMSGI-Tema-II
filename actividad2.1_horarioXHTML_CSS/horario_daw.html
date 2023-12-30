@@ -1,0 +1,222 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!DOCTYPE html
+   PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+   "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd" >
+
+<html xmlns="http://www.w3.org/1999/xhtml" lang="es">
+  <head>
+    <title>
+      Práctica Tablas - HORARIO 1º DAW
+    </title>
+    <style type="text/css" media="screen">
+	* {
+	  color:black;
+        }
+
+	table {
+	  /* border: 10px groove blue; */
+	  border-collapse:separate;
+	  margin-left: auto;
+	  margin-right: auto;
+	  text-align: center;
+	  vertical-align: middle;
+	  background: white;
+	  font-size: 1.2em;
+	  empty-cells: hide;
+	  border-spacing:2px;
+	}
+
+	table td:hover {
+	  background: #FFD700;  /* gold */
+	}
+
+	td, th {
+	  border: 2px solid white;
+	  padding:10px;
+	}
+	
+	.horas {background: #008B8B; width:200px;} /* darkcyan */
+
+	.dias {background: #ADFF2F; width:100px;} /* greenyellow */
+
+	.pre_recreo td {background: #00FFFF;}  /* cyan */
+
+	.recreo{background: #FF6347;}  /* tomato */
+	
+	.post_recreo td{background: #40E0D0;}  /* turquoise */
+
+	caption {
+	  caption-side: bottom;
+	  font-size: 1.5em;
+	}
+
+	tfoot {
+	  display: none;
+	}
+
+	abbr {
+	  border-bottom: none;
+	  cursor: help;
+  	}
+
+  </style>
+  </head>
+  <body>
+    <table summary="Horario grupo 1ºDAW">
+      <caption>
+        HORARIO 1ºDAW
+      </caption>
+      <colgroup class="horas"></colgroup>
+      <colgroup class="dias" span="5"></colgroup>
+      <thead>
+        <tr>
+          <th>
+            Horas
+          </th>
+          <th abbr="Lunes" scope="col">
+            L
+          </th>
+          <th abbr="Martes" scope="col">
+            M
+          </th>
+          <th abbr="Miércoles" scope="col">
+            X
+          </th>
+          <th abbr="Jueves" scope="col">
+            J
+          </th>
+          <th abbr="Viernes" scope="col">
+            V
+          </th>
+        </tr>
+      </thead>
+      <tfoot>
+        <tr>
+          <th>
+            Horas
+          </th>
+          <th abbr="Lunes" scope="col">
+            L
+          </th>
+          <th abbr="Martes" scope="col">
+            M
+          </th>
+          <th abbr="Miércoles" scope="col">
+            X
+          </th>
+          <th abbr="Jueves" scope="col">
+            J
+          </th>
+          <th abbr="Viernes" scope="col">
+            V
+          </th>
+        </tr>
+      </tfoot>
+      <tbody class="pre_recreo">
+        <tr>
+          <th scope="row">
+            15:00 - 15:55
+          </th>
+          <td>
+            <abbr title="Entornos de desarrollo">EED</abbr>
+          </td>
+		  <td>
+            <abbr title="Formación y Orientación Laboral">FOL</abbr>
+          </td>
+		  <td rowspan="2">
+            <abbr title="Formación y Orientación Laboral">FOL</abbr>
+          </td>
+		  <td>
+            <abbr title="Entornos de desarrollo">EED</abbr>
+          </td>
+		  <td>
+            <abbr title="Entornos de desarrollo">EED</abbr>
+          </td>
+        </tr>
+        <tr>
+          <th scope="row">
+            15:55 - 16:50
+          </th>
+          <td rowspan="2">
+            <abbr title="Programación">PRO</abbr>
+          </td>
+          <td rowspan="2">
+            <abbr title="Sistemas informáticos">SSII</abbr>
+          </td>
+          <td rowspan="2">
+            <abbr title="Bases de datos">BBDD</abbr>
+          </td>
+          <td rowspan="2">
+            <abbr title="Programación">PRO</abbr>
+          </td>          
+        </tr>
+        <tr>
+          <th scope="row">
+            16:50 - 17:45
+          </th>
+		  <td>
+            <abbr title="Bases de datos">BBDD</abbr>
+          </td>
+        </tr>        
+      </tbody>
+      <tbody class="recreo">
+        <tr>
+          <th scope="row">
+            17:45 - 18:15
+          </th>
+          <td colspan="5">
+            RECREO
+          </td>
+        </tr>
+      </tbody>
+      <tbody class="post_recreo">
+	    <tr>
+          <th scope="row">
+            18:15 - 19:10
+          </th>
+          <td rowspan="2">
+            <abbr title="Sistemas informáticos">SSII</abbr>
+          </td>
+		  <td rowspan="2">
+            <abbr title="Programación">PRO</abbr>
+          </td>
+		  <td>
+            <abbr title="Bases de datos">BBDD</abbr>
+          </td>
+          <td>
+			<abbr title="Lenguajes de marcas y sistemas de gestión de información">LMSGI</abbr>
+		  </td>
+		  <td>
+			<abbr title="Lenguajes de marcas y sistemas de gestión de información">LMSGI</abbr>
+		  </td>
+        </tr>
+        <tr>
+          <th scope="row">
+            19:10 - 20:05
+          </th> 
+		  <td rowspan="2">
+            <abbr title="Sistemas informáticos">SSII</abbr>
+          </td>	
+		  <td rowspan="2">
+            <abbr title="Programación">PRO</abbr>
+          </td>
+		  <td rowspan="2">
+            <abbr title="Bases de datos">BBDD</abbr>
+          </td>		  
+        </tr>
+        <tr>
+          <th scope="row">
+            20:05 - 21:00
+          </th>
+          <td>
+			<abbr title="Lenguajes de marcas y sistemas de gestión de información">LMSGI</abbr>
+		  </td>
+		  <td>
+			<abbr title="Lenguajes de marcas y sistemas de gestión de información">LMSGI</abbr>
+		  </td>
+        </tr>        
+      </tbody>
+    </table>
+  </body>
+</html>

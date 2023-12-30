@@ -1,0 +1,42 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+    "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="es" xml:lang="es">    
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <title>Mi página con Canvas: Cuadros con desplazamiento</title>
+</head>
+<body>
+    <h1>Dos cuadros con desplazamiento</h1>
+    <form oninput="lado.value=`${l.value}`; perimetro.value=`${4*l.value}`;draw()" >
+        <p>
+        Longitud del lado &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
+        0 <input type="range" id="l" name="l"> 100</p>        
+		<p>	 
+			Valor del lado &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+			<output name="lado" for="l"></output></p>
+		<p>Perímetro del cuadrado &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+			<output name="perimetro" for="l"></output></p>
+        <canvas id="canvas" width="600" height="300" style="border:5px dotted #000000;"></canvas>
+        <script>
+            function clear() {
+                const canvas = document.querySelector("#canvas");
+                const ctx = canvas.getContext("2d");
+                ctx.clearRect(0,0,canvas.width,canvas.height);
+            }
+            function draw(){
+                clear();
+                const canvas = document.querySelector("#canvas");
+                const ctx = canvas.getContext("2d");
+                let lado=parseInt(document.querySelector("#l").value);
+                ctx.beginPath();
+                ctx.strokeRect(50,50,lado,lado);
+                ctx.fillRect(75,75,lado,lado);
+                ctx.fillRect(350,50,lado, lado);     
+                ctx.strokeRect(375,75,lado, lado);                
+                ctx.stroke(); 
+            }                
+        </script>
+        <h2>Ejemplo con canvas que depende de una barra de desplazamiento</h2>
+        </form>
+        </body>
+    </html>

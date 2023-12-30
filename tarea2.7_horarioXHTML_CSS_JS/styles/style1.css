@@ -1,0 +1,64 @@
+@font-face {
+  font-family: MontserratBold;
+  src: url(fonts/Montserrat-Bold.ttf);
+}
+
+/*Estilos de las celdas*/
+  table td{
+    font-size: 1em;
+    font-weight: bold;
+  }
+  table td:hover {
+    transform: scale(1.05);
+  }
+  td, th {
+    border: 2px solid white;
+    padding:12px;
+  }  
+/*Estilos de las columnas horas y días*/
+colgroup.horas  {
+  background-color:  #f6f6f5;
+}
+colgroup.dias{
+  background-color:  #f6f6f5;
+}
+/*Estilos de celdas según el módulo y recreo*/
+.par{
+  background-color: #2dde98;
+}
+.gbd{
+  background-color: #fe5000;
+}
+.iso{
+  background-color: #00bce4;
+}
+.fh{
+  background-color: #ffd900;
+}
+.fol{
+  background-color: #ff4f81;
+}
+.lmsgi{
+  background-color: #8e43e7;
+}
+.recreo{
+  background-color: #c1d82f;
+}
+  /*Desactivo el hover para el recreo*/
+.recreo:hover{
+  transform: none;
+}
+ul>li>a{
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 1.2em;
+  color: #8e43e7;
+  border: solid 3px #8e43e7;
+  border-radius: 8px;
+  padding: 12px;
+}
+ul>li>a:hover{
+  border-color:#c1d82f;
+  color: #c1d82f;
+}
+

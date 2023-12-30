@@ -1,0 +1,191 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html
+   PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+   "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd" >
+<html xmlns="http://www.w3.org/1999/xhtml" lang="es">
+  <head>
+    <!--Enlace de la hoja de estilos principal o por defecto-->
+    <link rel="stylesheet"  href="styles/persistent.css" type="text/css"/>
+    <!--Enlaces de las hojas de estilos opcionales-->
+    <link id="stylesheet1"  rel="stylesheet" href="styles/style1.css" type="text/css"/>
+    <link id="stylesheet2" rel="stylesheet"  href="styles/style2.css" type="text/css"/>
+    <link id="stylesheet3" rel="stylesheet"  href="styles/style3.css" type="text/css"/>
+    <link id="stylesheet4" rel="stylesheet"  href="styles/style4.css" type="text/css"/>
+    <title>
+      Pr&aacute;ctica Tablas - HORARIO 1ero ASIR C
+    </title>
+  </head>
+  <body>
+    <table summary="Horario grupo 1ero ASIR C">
+      <caption>
+        Horario 1ASIRC
+      </caption>
+      <colgroup class="horas"></colgroup>
+      <colgroup class="dias" span="5"></colgroup>
+      <thead>
+        <tr>
+          <th>
+            Horas
+          </th>
+          <th abbr="Lunes" scope="col">
+            L
+          </th>
+          <th abbr="Martes" scope="col">
+            M
+          </th>
+          <th abbr="Miércoles" scope="col">
+            X
+          </th>
+          <th abbr="Jueves" scope="col">
+            J
+          </th>
+          <th abbr="Viernes" scope="col">
+            V
+          </th>
+        </tr>
+      </thead>
+      <tfoot>
+        <tr>
+          <th>
+            Horas
+          </th>
+          <th abbr="Lunes" scope="col">
+            L
+          </th>
+          <th abbr="Martes" scope="col">
+            M
+          </th>
+          <th abbr="Miércoles" scope="col">
+            X
+          </th>
+          <th abbr="Jueves" scope="col">
+            J
+          </th>
+          <th abbr="Viernes" scope="col">
+            V
+          </th>
+        </tr>
+      </tfoot>
+      <tbody>
+        <tr>
+          <th scope="row">
+            8: 15 - 09:15
+          </th> 
+          <!--Creo clases para darle estilos a cada uno de los módulos-->
+          <td rowspan="2" class="gbd"> 
+            <abbr title="Gestion de Base de Datos">GBD</abbr>
+          </td>
+		      <td rowspan="2" class="par">
+            <abbr title="Planificación y Administración de Redes">PAR</abbr>
+          </td>
+		      <td rowspan="2" class="iso">
+            <abbr title="Implementación de Sistemas Operativos">ISO</abbr>
+          </td>
+		      <td rowspan="2" class="iso">
+            <abbr title="Implementación de Sistemas Operativos">ISO</abbr>
+          </td>
+		      <td rowspan="2" class="gbd">
+            <abbr title="Gestion de Base de Datos">GBD</abbr>
+          </td>
+        </tr>
+        <tr>
+          <th scope="row">
+            9: 15 - 10:15
+          </th>
+        </tr>
+        <tr>
+          <th scope="row">
+            10: 15 - 11:15
+          </th>
+		      <td class="iso">
+            <abbr title="Implementación de Sistemas Operativos">ISO</abbr>
+          </td>
+		      <td class="iso">
+            <abbr title="Implementación de Sistemas Operativos">ISO</abbr>
+          </td>
+		      <td class="gbd">
+            <abbr title="Gestion de Base de Datos">GBD</abbr>
+          </td>
+		      <td class="fh">
+            <abbr title="Fundamentos de Hardware">FH</abbr>
+          </td>
+		      <td class="par">
+            <abbr title="Planificación y Administración de Redes">PAR</abbr>
+          </td>                                        
+        </tr>        
+      </tbody>
+      <tbody>
+        <tr>
+          <th scope="row">
+            11: 15 - 11:45
+          </th>
+          <td colspan="5" class="recreo">
+            RECREO
+          </td>
+        </tr>
+      </tbody>
+      <tbody>
+	    <tr>
+          <th scope="row">
+            11: 45 - 12:45
+          </th>
+		      <td class="iso">
+            <abbr title="Implementación de Sistemas Operativos">ISO</abbr>
+          </td>
+		      <td class="iso">
+            <abbr title="Implementación de Sistemas Operativos">ISO</abbr>
+          </td>
+		      <td class="gbd">
+            <abbr title="Gestion de Base de Datos">GBD</abbr>
+          </td>
+		      <td class="fh">
+            <abbr title="Fundamentos de Hardware">FH</abbr>
+          </td>
+		      <td class="par">
+            <abbr title="Planificación y Administración de Redes">PAR</abbr>
+          </td>          
+        </tr>
+        <tr>
+          <th scope="row">
+            12: 45 - 13:45
+          </th> 
+          <td rowspan="2" class="fol">
+            <abbr title="Formación y Orientación Laboral">FOL</abbr>
+          </td>
+          <td class="fh">
+            <abbr title="Fundamentos de Hardware">FH</abbr>
+          </td>
+		      <td rowspan="2" class="lmsgi">
+            <abbr title="Lenguajes de Marcas y Sistemas de Gestión de Información">LMSGI</abbr>
+          </td>
+		      <td rowspan="2" class="par">
+            <abbr title="Planificación y Administración de Redes" class="par">PAR</abbr>
+          </td>
+          <td rowspan="2" class="lmsgi">
+            <abbr title="Lenguajes de Marcas y Sistemas de Gestión de Información">LMSGI</abbr>
+          </td> 
+        </tr>
+        <tr>
+          <th scope="row">
+            13: 45 - 14:45
+          </th>
+          <td class="fol">
+            <abbr title="Formación y Orientación Laboral">FOL</abbr>
+          </td>          
+        </tr>        
+      </tbody>
+    </table>
+    <!--Menú de opciones de estilos. Llamo a uan función distinta para cada opción con el evento onclick-->
+    <div>
+    <p>Haga click en la opción de su preferencia para cambiar el estilo del horario</p>
+    <ul>
+      <li><a href="#" onclick="StyleSheet1()">Opci&oacute;n 1</a></li>
+      <li><a href="#" onclick="StyleSheet2()">Opci&oacute;n 2</a></li>
+      <li><a href="#" onclick="StyleSheet3()">Opci&oacute;n 3</a></li>
+      <li><a href="#" onclick="StyleSheet4()">Opci&oacute;n 4</a></li>
+    </ul>      
+    </div>
+    <!--Inserto el script-->
+    <script src="js/app.js" type="text/javascript"></script>
+  </body>
+  </html>

@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabla con im&aacute;genes y audio</title>
+    <style>
+        body{
+            background-color:#7FFFD4;
+            text-align: center;
+        }
+        h1, h2{
+             font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        }
+        h1{color:#FF69B4; 
+            font-size: 3em;
+        }
+        h2{
+            color:#32CD32;
+        }
+        table{
+            display: flex;
+            justify-content: center;
+        }
+        td{
+            border: solid 1px white;
+            padding: 10px;
+        }
+        .enfasis1{
+            background: #FF8C00;
+            color: #FF1493;
+            font-size: 2.5em;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            border-color: #FF1493;
+        }
+        .enfasis2{
+            color: #FF4500;
+            font-size: 2em;
+            font-family: 'Times New Roman', Times, serif;
+            border-color: #FF4500;
+        } 
+    </style>
+</head>
+<body>
+    <h1>CREACIÓN DE TABLAS EN HTML</h1>
+    <h2>Tabla con im&aacute;genes y audio</h2>
+    <table>
+        <tr>
+            <td><img src="images/logo_ies.jpeg" alt="Logo IES Zaid&aacute;n-Vergeles" width="200" height="200"></td>
+            <td colspan="2"><img src="images/imagenMain.jpg" alt="Panor&aacute;mica de la Alhambra iluminada con Sierra Nevada al fondo" width="350" height="200"></td>
+        </tr>
+        <tr>
+            <td colspan="3" class="enfasis1">SIERRA NEVADA - ALHAMBRA</td>
+        </tr>
+        <tr>
+            <td rowspan="2"><img src="images/imagenLeft.png" alt="Sierra Nevada" width="250" height="200"></td>
+            <td class="enfasis2">1 &#8451; ASIR</td>
+            <td rowspan="2"><img src="images/imagenRight.jpeg" alt="Cascada de Maro" width="250" height="200"></td>
+        </tr>
+        <tr>
+            <td class="enfasis2">Laura Ramos Granados</td>
+        </tr>
+        <tr>
+            <td colspan="3" class="enfasis1">GRANADA</td>
+        </tr>
+        <tr>
+            <td><img src="images/logo_ies.jpeg" alt="Logo IES Zaid&aacute;n-Vergeles" width="150" height="150"></td>
+            <td><img src="images/escudo.png" alt="Escudo de la provincia de Granada" width="120" height="150"></td>
+            <td><img src="images/logo_ies.jpeg" alt="Logo IES Zaid&aacute;n-Vergeles" width="150" height="150"></td>
+        </tr>
+        <tr>
+            <td colspan="3">
+                <audio controls muted autoplay loop>
+                    <source src="audios/modern-spanish-pop-rumba-pop-cello-and-flamenco-guitar-2469.mp3" type="audio/mp3">
+                    <source src="audios/modern-spanish-pop-rumba-pop-cello-and-flamenco-guitar-2469.ogg" type="audio/ogg">
+                    <source src="audios/modern-spanish-pop-rumba-pop-cello-and-flamenco-guitar-2469.wav" type="audio/wav">
+                    Tu navergador no soporta este elemento de audio.
+                </audio>
+            </td>
+        </tr>
+    </table>
+</body>
+</html>

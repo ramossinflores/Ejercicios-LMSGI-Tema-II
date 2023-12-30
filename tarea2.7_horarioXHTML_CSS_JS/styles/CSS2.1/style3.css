@@ -1,0 +1,58 @@
+body{
+  /*Imagen de fondo*/
+    background-image: url(/images/bg1.jpg);
+    background-repeat: no-repeat;
+  }
+  /*Estilos de la tabla*/
+  table {
+      border-collapse:separate;
+      text-align: center;
+      font-size: 1em;
+      empty-cells: hide;
+      border-spacing:6px;
+    }
+  /*Estilos de las celdas: En este caso usé una transparencia en el background*/
+    table th, td{
+      font-size: 1em;
+      font-weight: bold;
+      color: black;
+      padding:12px;
+      background-color: #b2dafa;
+    } 
+    /*Cambio en el tamaño y tipo de fuente*/
+    caption {
+      caption-side:top;
+      font-size: 3.5em;
+      padding: 16px;
+      font-family:serif;
+    }
+    tfoot {
+      display: none;
+    }
+  abbr {
+    cursor: help;
+    text-decoration: none;
+        }
+  p{
+    text-align: center;
+    margin-bottom: 32px;
+  }      
+  ul{
+    list-style: none;
+    margin-bottom: 32px;
+  }
+  /*Cambios en el color de letra y borde del menú*/
+  ul>li>a{
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 1.2em;
+    color: #84b6f4;
+    border: solid 3px #84b6f4;
+    padding: 8px;
+  }
+  ul>li>a:hover{
+    border-color: #7e58cb;
+    color: #7e58cb;
+  }
+  
+  

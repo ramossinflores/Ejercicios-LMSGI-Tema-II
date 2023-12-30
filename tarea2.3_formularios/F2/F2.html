@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="es-ES">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rellena tu CV</title>
+</head>
+<body>
+    <h1>Rellena tu CV</h1>
+    <form action="./php/insertar_cv.php" method="post" autocomplete="on">
+        <fieldset>
+            <legend>Datos personales</legend>
+            <p><label for="provincia">Provincia</label><br>
+                <select name="provincia" id="provincia">
+                    <option value="Granada">Granada</option>
+                    <option value="Sevilla">Sevilla</option>
+                    <option value="Huelva">Huelva</option>
+                    <option value="Cadiz">C&aacute;diz</option>
+                    <option value="Cardoba">C&oacute;rdova</option>
+                </select>
+            </p>
+            <p>Fecha de nacimiento<br>
+                <input type="number" name="fndia" id="fndia" min="1" max="30" step="1">
+                &nbsp;de&nbsp;
+                <select name="fnmes" id="fnmes">
+                    <option value="en">Enero</option>
+                    <option value="feb">Febrero</option>
+                    <option value="mar">Marzo</option>
+                    <option value="abr">Abril</option>
+                    <option value="may">Mayo</option>
+                    <option value="jun">Junio</option>
+                    <option value="jul">Julio</option>
+                    <option value="ago">Agosto</option>
+                    <option value="sep">Septiembre</option>
+                    <option value="oct">Octubre</option>
+                    <option value="nov">Noviembre</option>
+                    <option value="dic">Diciembre</option>
+                </select>
+                &nbsp;de&nbsp;
+                <input type="number" name="fnannio" id="fnannio" min="1900" max="2007" step="1">  
+            </p>
+            <p><label for="intereses">Temas de Inter&eacute;s</label><br>
+                <select name="intereses" id="intereses" multiple>
+                    <option value="ABD">Administración de Base de datos</option>
+                    <option value="AP">Análisis y programación</option>
+                    <option value="ARQ">Arquitectura</option>
+                    <option value="CALD">Calidad</option>
+                    <option value="ERP">ERP, CRM, Business Intelligence</option>
+                    <option value="ID">Idiomas</option>
+                    <option value="GD">Graphic Design</option>
+                </select>
+            </p>
+        </fieldset>
+    </form>
+</body>
+</html>

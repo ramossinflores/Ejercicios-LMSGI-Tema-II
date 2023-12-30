@@ -1,0 +1,77 @@
+body{
+    background-color: black;
+    color: white;
+  }
+  table {
+      border-collapse:separate;
+      text-align: center;
+      font-size: 1.2em;
+      empty-cells: hide;
+      border-spacing:8px;
+    }
+    table td{
+      font-size: 1em;
+      font-weight: bold;
+    }
+/*Estilos de las celdas en general: borde y padding*/    
+    td, th {
+      border: 2px solid white;
+      padding:12px;
+    }  
+    caption {
+      caption-side:top;
+      font-size: 2em;
+      padding: 16px;
+      font-family: serif;
+      letter-spacing: 6px;
+    }
+    tfoot {
+      display: none;
+    }
+  abbr {
+    cursor: help;
+    text-decoration: none;
+        }
+/*Estilos de celdas según el módulo y recreo*/
+  .par{
+    background-color: #77dd77;
+  }
+  .gbd{
+    background-color: #ff6961;
+  }
+  .iso{
+    background-color: #b8e4ff;
+  }
+  .fh{
+    background-color: #fdfd96;
+  }
+  .fol{
+    background-color: #fdcae1;
+  }
+  .lmsgi{
+    background-color: #e79eff;
+  }
+  .recreo{
+    background-color: #97cda6;
+    letter-spacing: 8px;
+  }
+  p{
+    text-align: center;
+    margin-bottom: 32px;
+  }      
+  ul{
+    list-style: none;
+    margin-bottom: 32px;
+  }
+  ul>li>a{
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 1.2em;
+    color: #8e43e7;
+    border: solid 3px #8e43e7;
+    padding: 12px;
+  }
+  ul>li>a:hover{
+    border-color:#c1d82f;
+    color: #c1d82f;
+  }

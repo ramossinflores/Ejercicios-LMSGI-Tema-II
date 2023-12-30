@@ -1,0 +1,39 @@
+/*Estilos de la tabla*/
+table {
+    border-collapse:separate;
+    text-align: center;
+    font-size: 1.2em;
+    empty-cells: hide;
+    border-spacing:8px;
+  }
+  caption {
+    caption-side:top;
+    font-size: 2em;
+    padding: 16px;
+    letter-spacing: 6px;
+    }
+  tfoot {
+    display: none;
+  }
+abbr {
+  cursor: help;
+      }
+caption {
+    caption-side:top;
+    padding: 16px;
+      }
+/*Estilos del nav*/
+p{
+    text-align: center;
+    margin-bottom: 32px;
+  }      
+  ul{
+    margin-bottom: 32px;
+  }
+  ul>li>a{
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 1.2em;
+    padding: 12px;
+  }
+ 

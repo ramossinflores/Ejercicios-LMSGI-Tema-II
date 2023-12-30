@@ -1,0 +1,69 @@
+  /*Agregué una nueva fuente para el caption*/
+  @font-face {
+    font-family: MontserratBold;
+    src: url(fonts/Montserrat-Bold.ttf);
+  }
+  body{
+  /*Imagen de fondo*/
+    background-image: url(/images/bg2.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  /*Estilos de las celdas: En este caso usé una transparencia en el background*/
+    table th, td{
+      font-size: 1em;
+      font-weight: bold;
+      color: white;
+      padding:15px;
+      background-color:#d3bcf6;
+      border-radius: 8px;
+    } 
+    /*Cambio en el tamaño y tipo de fuente*/
+    caption {
+      font-size: 2.5em;
+      font-weight: bold;
+      font-family: MontserratBold,serif;
+      color: white;
+      letter-spacing: 5px;
+    }
+/*Definición de estilos clases por cada módulo*/        
+        .par{
+            background-color: #2dde98;
+          }
+          .gbd{
+            background-color: #fe5000;
+          }
+          .iso{
+            background-color: #00bce4;
+          }
+          .fh{
+            background-color: #ffd900;
+          }
+          .fol{
+            background-color: #ff4f81;
+          }
+          .lmsgi{
+            background-color: #8e43e7;
+          }
+          .recreo{
+            background-color: #c1d82f;
+          }
+  p{
+    color: white;
+    font-size: 1.2em;
+    font-weight: bold;
+  }      
+  /*Cambios en el color de letra y borde del menú*/
+  ul>li>a{
+    color: white;
+    border: solid 3px white;
+    background: rgba(0, 0, 0, 0.70);
+    border-radius: 12px;
+  }
+  ul>li>a:hover{
+    border-color:  #ff4f81;
+    color: #ff4f81;
+    transition: all .7s;
+  }
+  
+  

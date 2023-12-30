@@ -1,0 +1,85 @@
+body{
+    background-image: url(/images/bg2.jpg);
+    background-repeat: no-repeat;
+  }
+  /*Estilos de la tabla*/
+  table {
+      border-collapse:separate;
+      text-align: center;
+      font-size: 1em;
+      empty-cells: hide;
+      border-spacing:6px;
+    }
+  /*Estilos de las celdas: En este caso usé una transparencia en el background*/
+    table th, td{
+      font-size: 1em;
+      font-weight: bold;
+      color: white;
+      padding:25px;
+      background-color:#d3bcf6;
+    } 
+    /*Cambio en el tamaño y tipo de fuente*/
+    caption {
+      caption-side:top;
+      font-size: 4em;
+      font-weight: bold;
+      padding: 12px;
+      font-family: serif;
+      color: white;
+      letter-spacing: 5px;
+    }
+    tfoot {
+      display: none;
+    }
+  abbr {
+    cursor: help;
+    text-decoration: none;
+        }
+/*Definición de estilos clases por cada módulo*/        
+        .par{
+            background-color: #2dde98;
+          }
+          .gbd{
+            background-color: #fe5000;
+          }
+          .iso{
+            background-color: #00bce4;
+          }
+          .fh{
+            background-color: #ffd900;
+          }
+          .fol{
+            background-color: #ff4f81;
+          }
+          .lmsgi{
+            background-color: #8e43e7;
+          }
+          .recreo{
+            background-color: #c1d82f;
+          }
+  p{
+    text-align: center;
+    margin-bottom: 32px;
+    color: white;
+    font-size: 1.2em;
+    font-weight: bold;
+  }      
+  ul{
+    list-style: none;
+    margin-bottom: 32px;
+  }
+  /*Cambios en el color de letra y borde del menú*/
+  ul>li>a{
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 1.2em;
+    color: white;
+    border: solid 3px white;
+    padding: 8px;
+  }
+  ul>li>a:hover{
+    border-color:  #ff4f81;
+    color: #ff4f81;
+  }
+  
+  
